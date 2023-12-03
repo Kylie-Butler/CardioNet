@@ -21,7 +21,7 @@ end
 chest_Pain = input('Chest Pain Type (0-3): ');
 rest_BP = input('Resting Blood Pressure [mmHg]: ');
 cholesterol = input('Serum Cholesterol [mg/dl]: ');
-fasting_BS = input('Fasting Blood Sugar > 120 mg/dl (Y or N): ');
+fasting_BS = input('Fasting Blood Sugar > 120 mg/dl (Y or N): ', 's');
 if strcmp(fasting_BS,'Y') == 1
     fasting_BS = 1;
 else
