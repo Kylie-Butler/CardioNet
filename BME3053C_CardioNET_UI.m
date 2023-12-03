@@ -58,9 +58,9 @@ load('CardioNet_90.mat');
 output = CardioNet(Features1(1:9,298));
 
 %% Interpretation of neural network results
-if output<0.3
+if output<0.4
     fprintf('The patient is not at risk of Coronary Artery Disease \n')
-elseif output>=0.3&&output<=0.7
+elseif output>=0.4&&output<=0.6
     fprintf('The patient has a moderate risk of Coronary Artery Disease. Further testing required. \n')
 else 
     fprintf('The patient is at high risk of Coronary Artery Disease. Please refer to cardiologist. \n')
